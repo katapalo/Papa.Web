@@ -1,0 +1,29 @@
+﻿.btn.btn-default.form-control.ui-select-toggle {
+    border-color: #ccc;
+}
+
+div.has-error > div.ui-select-container.ui-select-bootstrap > .ui-select-match > span {
+    border-color: red;
+}
+
+div.ui-select-container.ui-select-bootstrap > .ui-select-match > span {
+    overflow: hidden;
+    padding-right: 30px;
+}
+
+
+    div.ui-select-container.ui-select-bootstrap > .ui-select-match > span .ui-select-match-text {
+        width: 100%;
+    }
+
+        div.ui-select-container.ui-select-bootstrap > .ui-select-match > span .ui-select-match-text span {
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+.ui-select-choices-row-inner {
+    min-height: 20px;
+}

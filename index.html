@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title page-title>Arquitectura V1</title>
+
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <!--<link href="lib/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet" />-->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!--<link href="lib/sweetalert/dist/sweetalert.css" rel="stylesheet" />
+    <link href="lib/fullcalendar/dist/fullcalendar.css" rel="stylesheet" />
+    <link href="lib/angular-ui-grid/ui-grid.css" rel="stylesheet" />
+    <link href="lib/nvd3/build/nv.d3.css" rel="stylesheet" />
+    <link href="lib/angular-ui-tab-scroll/angular-ui-tab-scroll.css" rel="stylesheet" />
+    <link href="lib/angular-ui-select/dist/select.css" rel="stylesheet" />    
+    <link href="lib/ng-tags/ng-tags-input.css" rel="stylesheet" />
+    <link href="lib/ng-tags/ng-tags-input.bootstrap.css" rel="stylesheet" />-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.custom.css">
+    <link rel="stylesheet" href="css/my-ui-select.css">
+
+
+</head>
+<body class="fixed-navbar">
+    <div class="color-line banner ng-scope"></div>
+    <div ui-view class="h-full"></div>
+
+    <!--BASE LIBS-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/moment/min/moment-with-locales.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!--<script src="lib/respond/dest/respond.min.js"></script>-->
+    <!--<script src="lib/sweetalert/dist/sweetalert.min.js"></script>-->
+    <!--<script src="lib/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>-->
+    <!--<script src="lib/fullcalendar/dist/fullcalendar.js"></script>-->
+    <!--<script src="lib/fullcalendar/dist/lang-all.js"></script>-->
+
+
+    <!--ANGULAR-->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-i18n/angular-locale_es-es.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/ui-router-extras/release/ct-ui-router-extras.js"></script>
+    <script src="lib/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/tv4/tv4.js"></script>
+    <script src="lib/objectpath/lib/ObjectPath.js"></script>
+    <script src="lib/angular-schema-form/dist/schema-form.js"></script>
+    <script src="lib/angular-schema-form/dist/bootstrap-decorator.js"></script>
+
+    <!--<script src="lib/angular-breadcrumb/release/angular-breadcrumb.js"></script>-->
+    <!--<script src="lib/angular-ui-grid/ui-grid.js"></script>-->
+    <!--<script src="lib/solnet/ui-grid.fixIE.js"></script>-->
+    <!--<script src="lib/ng-currency/dist/ng-currency.js"></script>
+    <script src="lib/angular-ui-tab-scroll/angular-ui-tab-scroll.js"></script>
+    <script src="lib/angular-ui-scrollpoint/dist/scrollpoint.js"></script>
+    <script src="lib/angular-ui-select/dist/select.js"></script>
+    <script src="lib/angular-ui-calendar/src/calendar.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="lib/nvd3/build/nv.d3.js"></script>    
+    <script src="lib/angular-nvd3/dist/angular-nvd3.js"></script> -->
+
+    <!--APP SCRIPTS-->
+    <script src="app/_bootstrap.js"></script>
+    <script src="app/_routes.js"></script>
+    
+
+    <!-- SERVICIOS / API -->
+    <script src="app/.api/_bootstrap.js"></script>
+    <script src="app/.api/servicio1.js"></script>
+    <script src="app/.api/comboService.js"></script>
+
+    <!-- DIRECTIVAS -->
+    <script src="app/directives/anCombo.js"></script>
+
+    <!--<script src="app/.global/polyfill/string.js"></script>-->
+
+    <!--<script src="app/.global/config/HTTPConfig.js"></script>-->
+    <!--<script src="app/.global/config/GridLanguageConfig.js"></script>
+
+    <script src="app/.global/config/DateTimePickerConfig.js"></script>
+    <script src="app/.global/config/uiGrid/ui-grid-default-options.js"></script>
+    <script src="app/.global/config/ApplicationConfig.js"></script>
+
+    <script src="app/.global/interceptor/requestInterceptor.js"></script>
+    <script src="app/.global/interceptor/responseInterceptor.js"></script>
+    <script src="app/.global/interceptor/responseInterceptorAPI.js"></script>
+    <script src="app/.global/interceptor/requestInterceptorVersioned.js"></script>-->
+
+    <!--<script src="app/.global/services/user/userService.js"></script>
+    <script src="app/.global/services/alert/alerts.js"></script>
+    <script src="app/.global/services/idsrv/idsrvConstants.js"></script>
+    <script src="app/.global/services/idsrv/idsrvService.js"></script>-->
+
+    <!--<script src="app/.global/filters/yesNoFilter.js"></script>
+    <script src="app/.global/filters/roleFilter.js"></script>
+    <script src="app/.global/filters/fechaIncurridosFilter.js"></script>
+    <script src="app/.global/filters/estadoTiempoIncurridoFilter.js"></script>
+    <script src="app/.global/filters/fechaFacturacionFilter.js"></script>
+
+    <script src="app/.global/directives/minimalizaMenu.js"></script>
+    <script src="app/.global/directives/datetimepicker.js"></script>
+    <script src="app/.global/directives/uiGrid/uiGridLocalRowFilter.js"></script>
+    <script src="app/.global/directives/uiGrid/uiGridForceRender.js"></script>
+    <script src="app/.global/directives/uiGrid/ui-grid-menu-button-filter-activator.js"></script>
+    <script src="app/.global/directives/uiRoute/uiSrefActiveIf.js"></script>
+    <script src="app/.global/directives/optionYesNo.js"></script>
+    <script src="app/.global/directives/logoutButton.js"></script>
+    <script src="app/.global/directives/statesOption.js"></script>
+    <script src="app/.global/directives/partidaOption.js"></script>
+    <script src="app/.global/directives/prioridadOption.js"></script>
+    <script src="app/.global/directives/unidadOption.js"></script>
+    <script src="app/.global/directives/dunOption.js"></script>
+    <script src="app/.global/directives/direccionOption.js"></script>
+    <script src="app/.global/directives/tipologiaOption.js"></script>
+    <script src="app/.global/directives/gestoritOption.js"></script>
+    <script src="app/.global/directives/gestorprocOption.js"></script>
+    <script src="app/.global/directives/petStateOptions.js"></script>
+    <script src="app/.global/directives/petPartnerOptions.js"></script>
+    <script src="app/.global/directives/statesOption.js"></script>
+    <script src="app/.global/directives/semOption.js"></script>
+    <script src="app/.global/directives/solicitanteOption.js"></script>
+    <script src="app/.global/directives/httpProtocolRequiredFilter.js"></script>
+    <script src="app/.global/directives/uiGrid/uiGridExportCellValue.js"></script>
+    <script src="app/.global/directives/stateIncurridosOptions.js"></script>
+    <script src="app/.global/directives/mesesOptions.js"></script>
+    <script src="app/.global/directives/anyosOptions.js"></script>-->
+
+    <!--<script src="app/.global/directives/security/visibleRole.js"></script>
+    <script src="app/.global/directives/security/editableRole.js"></script>
+    <script src="app/.global/directives/security/hideRole.js"></script>
+    <script src="app/.global/directives/security/readonlyRole.js"></script>-->
+
+
+    <!--APP SCRIPTS / API-->
+    
+    <!--<script src="app/.api/auth/constants.js"></script>
+    <script src="app/.api/auth/authService.js"></script>
+    <script src="app/.api/protected/protectedService.js"></script>
+    <script src="app/.api/proyecto/proyectoService.js"></script>
+    <script src="app/.api/graphics/graphicsService.js"></script>
+    <script src="app/.api/peticion/peticionService.js"></script>
+    <script src="app/.api/gestorIT/gestorITService.js"></script>
+    <script src="app/.api/gestorPR/gestorPRService.js"></script>
+    <script src="app/.api/partner/partnerService.js"></script>
+    <script src="app/.api/logCambioHead/logCambioHeadService.js"></script>
+    <script src="app/.api/logCambioDetail/logCambioDetailService.js"></script>
+    <script src="app/.api/incurridos/tiempoIncurridoService.js"></script>
+    <script src="app/.api/peticion/peticionMultiFilter.js"></script>
+    <script src="app/.api/proyecto/proyectoMultiFilter.js"></script>-->
+
+    <!--APP SCRIPTS / LOGIN -->
+    <!--<script src="app/login/_bootstrap.js"></script>
+    <script src="app/login/_routes.js"></script>
+    <script src="app/login/loginController.js"></script>
+    <script src="app/login/loginCallbackController.js"></script>
+    <script src="app/login/unauthorizedController.js"></script>-->
+
+ 
+    <!--APP SCRIPTS / INDEX DEFAULT-->
+    <script src="app/home/_bootstrap.js"></script>
+    <script src="app/home/_routes.js"></script>
+    <script src="app/home/homeIndexCtrl.js"></script>
+    <script src="app/home/abstractCtrl.js"></script>
+   
+
+    <!-- Test -->
+    <script src="app/test/_bootstrap.js"></script>
+    <script src="app/test/_routes.js"></script>
+    <script src="app/test/testIndexCtrl.js"></script>
+
+</body>
+</html>

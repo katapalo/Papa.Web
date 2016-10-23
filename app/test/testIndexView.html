@@ -1,0 +1,27 @@
+﻿
+<div class="content p-b-sm" animate-panel effect="zoomIn">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Test API</h2>
+            <p>
+                <button class="btn btn-default" ng-click="vm.testApi()">
+                    Click me
+                </button>
+            </p>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="claim in vm.claims track by $index">
+                <td>{{claim.type}}</td>
+                <td>{{claim.value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

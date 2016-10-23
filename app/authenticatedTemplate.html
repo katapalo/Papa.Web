@@ -1,0 +1,10 @@
+<!--<div id="header" ng-include="'wwwroot/app/header.html'"></div>
+<aside id="menu" ng-include="'wwwroot/app/sidebar.html'"></aside>-->
+
+<div id="wrapper" class="" style="background-color:#f2f2f2">
+    <div ui-view='app.home' ng-show="$state.includes('app.home')" class=""></div>
+    <div ui-view='app.proyecto' ng-show="$state.includes('app.proyecto')" class=""></div>
+    <div ui-view='app.peticiones' ng-show="$state.includes('app.peticiones')" class=""></div>
+    <div ui-view='app.graphics' ng-show="$state.includes('app.graphics')" class=""></div>
+    <div ui-view='app.cgd' ng-show="$state.includes('app.cgd')" class=""></div>
+</div>
